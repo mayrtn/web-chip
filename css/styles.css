@@ -4,16 +4,32 @@
     list-style: none;
  }
 
- body {
-    font-family: sans-serif;
-    text-transform: capitalize;
+
+@font-face {
+   font-family: Ferrite;
+   src: url(../fonts/ferrite.woff);
+}
+/*
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal; */
+
+body {
+   font-family: "VT323", monospace;
+   font-weight: 400;
+   font-style: normal;
+   text-transform: capitalize;
  }
 
 
  /* HEADER --------------------------------------------------------------------------------------------------------------*/
 
 .header {
-   width: 100%;
+   text-transform: uppercase;
+   font-family: "ferrite";
+   letter-spacing: 3px;
+   font-size: 12pt;
+   max-width: 100%;
    min-height: 80px;
    display: flex;
    flex-wrap: wrap;
@@ -78,9 +94,9 @@
 .div-usuario-header { 
    width:fit-content;
    height: 100%;
-   padding: 0 60px;
+   padding: 0 10px;
    display:flex;
-   margin-right: 10px;
+   margin-right: 50px;
    line-height: 80px;
    gap: 30px;
    color: black;
@@ -104,9 +120,176 @@
  
  
  /* HERO SECTION*/
+ .hero-section{
+   margin-bottom: 0;
+   display: flex;
+   max-width: 100%;
+   height: 600px;
+   justify-content: center;
+   align-items: center;
+   font-family: "ferrite";
+   text-transform: none;
+   letter-spacing: 2px;
+   background-image: url(../images/Fondos/fondoHeroSect.jpeg);
+   background-size:cover;
+ }
+
+ .hero-section-contenido {
+   justify-self: center;
+   text-align:left;
+   width: 80%;
+   letter-spacing: 5px;
+ }
+
+ .hero-section-contenido h1 {
+   font-size: 25pt;
+   margin-bottom: 20px;
+   text-transform:uppercase;
+ }
+
+ .hero-section-contenido h2 {
+   font-size: 20pt;
+   margin-bottom: 40px;
+ }
+
+ .container-boton-cta {
+   justify-self: center;
+   width: fit-content;
+   padding: 20px 40px;
+   background-color:white;
+   justify-content: center;
+   text-align: center;
+   border-radius: 10px;
+ }
+
+ .container-boton-cta a {
+   text-transform: uppercase;
+   color:#04F500;
+   text-decoration: none;
+   font-size: 17pt;
+   transition: color 0.2s ease, text-decoration 0.2s ease;
+ }
+
+ .container-boton-cta a:hover{
+   color: black;
+   text-decoration: underline;
+   text-decoration-color:#04F500;
+   text-decoration-thickness: 8px;
+   text-underline-offset: 4px;
+ }
+
+ /* beneficios -----------------------------------------------------------------------------------------------------------*/
+
+ .beneficios{
+   margin-top: 0;
+   kerning: none;
+   background-color: #f6f6f6;
+   height: 100vb;
+ }
+
+ .titulo {
+   margin-bottom: 0pt;
+   text-transform: uppercase;
+   margin-top: 0;
+   padding-top: 45pt;
+   padding-left: 30pt;
+   font-size: 20pt;
+   font-family: "ferrite";
+ }
+
+ .titulo h1{
+   font-size: 20pt;
+   background-color: #04F500;
+   justify-self: left;
+   width: fit-content;
+   padding: 15px 40px;
+   margin-bottom: 0px;
+ }
+
+ .beneficios-conteiner{
+   padding-top: 5px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 25px;
+   align-items: center;
+   max-width: 100%;
+   padding-top: 10pt;
+ }
+ 
+ .beneficios-columna-izquierda,.beneficios-columna-derecha {
+   display: flex;
+   flex-direction: column;
+   gap: 20px; /* espacio entre parrafos*/
+   }
+
+ .beneficios-columna-izquierda h1 {
+   font-family: "ferrite";
+   text-transform: uppercase;
+   text-align:center ;
+   font-size: 15pt;
+   text-decoration: underline;
+   text-decoration-thickness: 4px;
+   text-underline-offset: 2px;
+   text-decoration-color: #04F500;
+ }
+ .beneficios-columna-derecha h1 {
+   font-family: "ferrite";
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 15pt;
+   text-decoration: underline;
+   text-decoration-thickness: 4px;
+   text-underline-offset: 2px;
+   text-decoration-color: #04F500;
+ }
+
+ .beneficios-columna-izquierda p {
+   text-align: justify;
+   font-size: 15pt;
+   padding: 20pt;
+ }
+
+ .beneficios-columna-derecha p {
+   text-align: justify;
+   font-size: 15pt;
+   padding: 20pt;
+ }
 
 
 
+ .beneficios-columna-centro img{
+   width: 100%;
+   height: auto;
+ }
+
+ /* CONTACTO -----------------------------------------------------------------------------------------------------------*/
+
+.contacto {
+   max-width: 100%;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   height: 80vh;
+   background-image:url(../images/Fondos/fondoAglomerado.jpg) ;
+
+}
+
+.contacto-conteiner {
+
+}
+
+.form {
+   font-family: "VT323", monospace;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.titulo {
+   font-family: "ferrite";
+   letter-spacing: 3px;
+   font-size: 6pt;
+   margin-bottom: 10pt;
+}
 
  /* FOOTER -----------------------------------------------------------------------------------------------------------*/
 
@@ -123,6 +306,7 @@
  .filas-footer {
     display: flex;
     flex-wrap: nowrap;
+    overflow-x: hidden;
  }
 
  .links-footer { 
@@ -133,7 +317,10 @@
  }
 
  .links-footer h4 { 
-    font-size: 15px;
+    font-family: "ferrite";
+    letter-spacing: 3px;
+    margin-left: 3px;
+    font-size: 10px;
     color: black;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -170,7 +357,7 @@
  }
 
  .links-redes a{ 
-    font-size: 20px;
+    font-size: 25px;
     color: #000000;
  }
 

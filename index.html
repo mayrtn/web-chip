@@ -6,6 +6,8 @@
     <title>CHIP</title>
     <link rel="icono" href="images/Logos/iconoLogo.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/fa3ac53ee3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,15 +35,65 @@
         <section id="inicio">
            
             <div  class="hero-section">
+                <div class="hero-section-contenido">
+                    <h1>El diseño no es un lujo, <br>el diseño es nuestra personalidad</h1>
+                    <h2>Materiales con historia, acabados de vanguardia. Muebles que hablan tu idioma.</h2>
+                    <div class="container-boton-cta">
+                        <a href="#">Descubri lo que nos hace unicos</a>
+                    </div>
+                </div>
+            </div>
       
+        </section>
+
+        <section class="beneficios">
+            <div class="titulo">
+                <h1>Somos diferentes:</h1>
+            </div>
+            <div class="beneficios-conteiner">
+                <div class="beneficios-columna-izquierda">
+                    <h1>Ipsum dolor sit</h1>
+                    <p>Lornsectetur adipiscliquet arcu sed volutpat. Praesent faucibus luctus risus eu posuere. Fusce sit amet laoreet ligula. Integer faucibus massa eu lorem porta</p>
+                    <h1>Ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet aliquet arcu sosuere. Fusce sit amet laoreet ligula. Integer faucibus massa eu lorem porta</p>
+                </div>
+                <div class="beneficios-columna-centro">
+                    <img src="images/Adicionales/sofaCuboFondo.jpeg" alt="imagen-living">
+                </div>
+                <div class="beneficios-columna-derecha">
+                    <h1>Ipsum dolor sit</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingdiet aliquet arcu sed volutpat. Praesent faucibus luctus rmet laoreet ligula. Integer faucibus massa eu lorem porta</p>
+                    <h1>Ipsum dolor sit</h1>
+                    <p>Lorem ips adipiscing elit. Praesent imperdiet aliquet arcu sed volutpat.s risus eu posuere. Fusce sit amet laoreet ligula. Integer faucibus massa eu lorem porta</p>
+                </div>
+            </div>
         </section>
         
         <section class="productos destacados">
             <!-- carrousel con articulos mas vendidos -->
         </section>
        
-        <section id="contacto">
-
+        <section class="contacto">
+            <div class="contacto-conteiner">
+                <form action="https://formspree.io/f/xjkvkqnw" method="post">
+                    <div class="titulo">
+                        <h2>Pongamonos en contacto!</h2>
+                    </div>
+                    <div class="datos">
+                        <label for="name">Tu nombre:</label>
+                        <input type="text" name="nombre" id="name">
+                        <label for="email">Tu email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="mensaje">
+                        <label for="mensaje">Tu mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="boton-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
         </section>
         
     </main>
